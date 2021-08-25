@@ -1,6 +1,6 @@
-     $.get("resources/navbar/navbar.html", function(data){
-          $("nav").replaceWith(data);
-      });
+    //  $.get("resources/navbar/navbar.html", function(data){
+    //       $("nav").replaceWith(data);
+    //   });
       
       function addLeadingZero(n) {
         if (n < 10) {
@@ -20,7 +20,8 @@
         h = addLeadingZero(h);
         m = addLeadingZero(m);
         s = addLeadingZero(s);
-        document.all["time"].innerHTML = h + ":" + m + ":" + s;
+        document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+        // document.id["time"].innerHTML = h + ":" + m + ":" + s;
         setTimeout(function(){ windTheClock(timeZoneOffset) }, 1000);
     }
     

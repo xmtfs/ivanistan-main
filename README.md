@@ -1,1 +1,0 @@
-# ivanistan.v3.0
